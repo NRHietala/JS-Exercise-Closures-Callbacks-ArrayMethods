@@ -223,8 +223,8 @@ function removeApple(strings) {
  * 
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
-function stringSmash(strings) {
-  return strings.reduce((val)=> )
+function stringSmash() {
+  
 }
 
 // A local community center is holding a fund raising 5k fun run and has invited
@@ -243,7 +243,9 @@ function stringSmash(strings) {
  * The full names appear in the array in the same order the runners appear in the `runners` array.
 */
 function getFullNames(runners) {
-  return runners.map()
+  return runners.map((runner)=> {
+    return `${runner.last_name}, ${runner.first_name}`
+  })
 }
 
 /**
@@ -258,8 +260,10 @@ function getFullNames(runners) {
  * @returns an array with all the runners' first names in ALL CAPS.
  * The first names appear in the array in the same order the runners appear in the `runners` array.
 */
-function firstNamesAllCaps(/* CODE HERE */) {
-  /* CODE HERE */
+function firstNamesAllCaps(runners) {
+  return runners.map((runner)=> {
+    return `${runner.first_name.toUpperCase()}`
+  })
 }
 
 /**
