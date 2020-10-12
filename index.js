@@ -134,8 +134,11 @@ function processProduct(num1, num2, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
 */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
-  /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+function processDuplicateFree(list, callback) {
+  // return callback(list.filter(function (value) {
+  //   if(list.includes(value)){
+  //   }
+  // }))
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
@@ -223,7 +226,11 @@ function removeApple(strings) {
  * 
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
 */
-function stringSmash() {
+function stringSmash(strings) {
+  strings.reduce((acc,value)=> {
+    
+  })
+  
   
 }
 
@@ -280,8 +287,9 @@ function firstNamesAllCaps(runners) {
  * @returns an array containing only the runners that use the given `tShirtSize`.
  * The runners in the array appear in the same order they appear in the `runners` array.
 */
-function getRunnersByTShirtSize(/* CODE HERE */) {
-  /* CODE HERE */
+function getRunnersByTShirtSize(runners, tShirtSize) {
+  // Regular Expression?
+  //return runners.filter()
 }
 
 /**
